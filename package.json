@@ -1,0 +1,19 @@
+{
+  "name": "celeb-code-practice",
+  "version": "1.0.0",
+  "description": "Practicing JS w/ data about celebrities",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saladriel/celeb-code-practice.git"
+  },
+  "keywords": [],
+  "author": "saladriel",
+  "license": "ISC",
+  "homepage": "https://github.com/saladriel/celeb-code-practice#readme",
+  "devDependencies": {
+    "jest": "28.1.1"
+  }
+}
