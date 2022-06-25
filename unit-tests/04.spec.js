@@ -2,6 +2,6 @@
 04.
 log to the console each person
 */
-test('does something', () => {
+test.skip('does something', () => {
 	expect(true).toBe(true);
 })
