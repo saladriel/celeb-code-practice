@@ -3,6 +3,6 @@
 write a function 'isOlderThan' that given an age and a person returns whether they are the
 given age and up
 */
-test.skip('does something', () => {
-	expect(true).toBe(true);
-})
+test.skip("does something", () => {
+  expect(true).toBe(true);
+});

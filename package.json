@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Practicing JS w/ data about celebrities",
   "scripts": {
+    "format": "prettier --write *",
     "test": "jest"
   },
   "repository": {
@@ -14,6 +15,7 @@
   "license": "ISC",
   "homepage": "https://github.com/saladriel/celeb-code-practice#readme",
   "devDependencies": {
-    "jest": "28.1.1"
+    "jest": "28.1.1",
+    "prettier": "2.7.1"
   }
 }

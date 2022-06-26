@@ -6,6 +6,6 @@ write a function 'attractivenessTier' that given a person returns:
 - 'attractive' for 8-9
 - 'extremely attractive' for 10
 */
-test.skip('does something', () => {
-	expect(true).toBe(true);
-})
+test.skip("does something", () => {
+  expect(true).toBe(true);
+});
