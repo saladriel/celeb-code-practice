@@ -9,7 +9,7 @@ test("logs the count of all the people", () => {
   require("../challenges/01.js");
   // Assert
   expect(console.log).toHaveBeenCalledTimes(1);
-  expect(console.log).toHaveBeenCalledWith(6);
+  expect(console.log).toHaveBeenCalledWith(8);
   // Cleanup
   console.log.mockRestore();
 });

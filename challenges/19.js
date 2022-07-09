@@ -1,5 +1,5 @@
 /*
 19.
-write a function 'couples' that given a list of people returns a list of couples
-(hint: a single couple might look like ['person 1', 'person 2'])
+write a function 'fullNamesByAttractivenessTier' that given a list of people returns an object
+where each key is a tier and each value is an array of the full names of people in that tier
 */

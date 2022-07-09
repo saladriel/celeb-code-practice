@@ -17,7 +17,7 @@ const aaronJohnson = {
 const samTaylor = {
   firstName: "Sam",
   lastName: "Taylor",
-  attractiveness: 1,
+  attractiveness: 4,
   dateOfBirth: new Date(1967, 2, 4),
   gender: "female",
 };
@@ -27,6 +27,22 @@ const charlizeTheron = {
   lastName: "Theron",
   attractiveness: 10,
   dateOfBirth: new Date(1975, 7, 7),
+  gender: "female",
+};
+
+const markFoster = {
+  firstName: "Mark",
+  lastName: "Foster",
+  attractiveness: 6,
+  dateOfBirth: new Date(1984, 1, 29),
+  gender: "male",
+};
+
+const juliaGarner = {
+  firstName: "Julia",
+  lastName: "Garner",
+  attractiveness: 7,
+  dateOfBirth: new Date(1994, 1, 1),
   gender: "female",
 };
 
@@ -50,10 +66,33 @@ aaronJohnson.partner = samTaylor;
 
 samTaylor.partner = aaronJohnson;
 
+markFoster.partner = juliaGarner;
+
+juliaGarner.partner = markFoster;
+
 keanuReeves.partner = alexandraGrant;
 
 alexandraGrant.partner = keanuReeves;
 
-const people = [bradPitt, aaronJohnson, samTaylor, charlizeTheron, keanuReeves, alexandraGrant];
+const people = [
+  bradPitt,
+  aaronJohnson,
+  samTaylor,
+  charlizeTheron,
+  markFoster,
+  juliaGarner,
+  keanuReeves,
+  alexandraGrant,
+];
 
-module.exports = people;
+module.exports = {
+  people,
+  bradPitt,
+  aaronJohnson,
+  samTaylor,
+  charlizeTheron,
+  markFoster,
+  juliaGarner,
+  keanuReeves,
+  alexandraGrant,
+};

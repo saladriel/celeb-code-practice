@@ -1,11 +1,36 @@
 /*
 14.
-write a function 'attractivenessTier' that given a person returns:
-- 'not attractive' for 1-4
-- 'average' for 5-7
-- 'attractive' for 8-9
-- 'extremely attractive' for 10
+write a function 'overAchievedWithPartner' that given a person returns whether their partner is in
+a higher attractiveness tier
 */
-test.skip("does something", () => {
-  expect(true).toBe(true);
+const overAchievedWithPartner = require("../challenges/14");
+const { bradPitt, aaronJohnson, markFoster, samTaylor } = require("../people");
+
+test.each([
+  {
+    description: "no partner",
+    person: bradPitt,
+    expected: false,
+  },
+  {
+    description: "partner is lower attractiveness tier",
+    person: aaronJohnson,
+    expected: false,
+  },
+  {
+    description: "partner is same attractiveness tier",
+    person: markFoster,
+    expected: false,
+  },
+  {
+    description: "partner is higher attractiveness tier",
+    person: samTaylor,
+    expected: true,
+  },
+])("returns $expected if $description", ({ person, expected }) => {
+  // Arrange
+  // Act
+  const actual = overAchievedWithPartner(person);
+  // Assert
+  expect(actual).toBe(expected);
 });

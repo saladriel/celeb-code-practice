@@ -1,5 +1,5 @@
 /*
 18.
-write a function 'fullNamesOfOverachievers' that given a list of people returns a list of
-full names of only the people who over-achieved with their partner
+write a function 'peopleSummaries' that given a list of people returns a list of people summaries
+(full name and age)
 */

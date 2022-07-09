@@ -1,16 +1,20 @@
-const isOlderThan50 = require("./12");
-const isMale = require("./09");
-
 /*
 13.
-write a function 'isMaleOlderThan50' that given a person returns whether they are a male
-and 50 and up (hint: use existing functions you've written)
+write a function 'attractivenessTier' that given a person returns:
+- 'not attractive' for 1-4
+- 'average' for 5-7
+- 'attractive' for 8-9
+- 'extremely attractive' for 10
 */
-function isMaleOlderThan50(person) {
-  return isMale(person) && isOlderThan50(person);
-}
-
-// console.log(isMaleOlderThan50({ dateOfBirth: new Date(1971, 6, 5), gender: "male" }));
-// console.log(isMaleOlderThan50({ dateOfBirth: new Date(1971, 6, 5), gender: "female" }));
-// console.log(isMaleOlderThan50({ dateOfBirth: new Date(1973, 6, 5), gender: "male" }));
-// console.log(isMaleOlderThan50({ dateOfBirth: new Date(1973, 6, 5), gender: "female" }));
+module.exports = function attractivenessTier(person) {
+  if (person.attractiveness <= 4) {
+    return "not attractive";
+  }
+  if (person.attractiveness >= 5 && person.attractiveness <= 7) {
+    return "average";
+  }
+  if (person.attractiveness >= 8 && person.attractiveness <= 9) {
+    return "attractive";
+  }
+  return "extremely attractive";
+};
